@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>엄랭 v2 (가칭) 플레이그라운드</title>
+  <meta name="description" content="2026년 밈으로 만든 난해한 프로그래밍 언어 엄랭 v2를 브라우저에서 바로 실행해 보는 플레이그라운드" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>엄랭 v2 <span class="tent">(가칭)</span></h1>
+      <p class="tagline">첫 줄에 어머니를 외치고, 예?로 묻고, 검은흑곰으로 닫는 언어</p>
+    </div>
+    <div class="actions">
+      <label class="select-wrap">
+        <span class="visually-hidden">예제 불러오기</span>
+        <select id="examples" aria-label="예제 불러오기">
+          <option value="">예제 불러오기</option>
+        </select>
+      </label>
+      <button id="cheat-toggle" type="button" aria-expanded="false" aria-controls="cheat">치트시트</button>
+      <button id="share" type="button">링크 복사</button>
+      <button id="run" type="button" class="primary">실행 <kbd>Ctrl+Enter</kbd></button>
+    </div>
+  </header>
+
+  <main class="work">
+    <section class="pane editor-pane" aria-label="코드">
+      <div class="pane-head">
+        <h2>코드</h2>
+        <span id="cursor-pos" class="hint">1번째 줄</span>
+      </div>
+      <div class="editor">
+        <pre id="gutter" class="gutter" aria-hidden="true">1</pre>
+        <textarea id="code" spellcheck="false" autocapitalize="off" autocomplete="off" wrap="off" aria-label="코드 편집창"></textarea>
+      </div>
+    </section>
+
+    <section class="pane io-pane" aria-label="입력과 출력">
+      <div class="pane-head">
+        <h2>입력 <span class="hint">긁?가 한 줄씩 읽음</span></h2>
+      </div>
+      <textarea id="stdin" class="stdin" spellcheck="false" rows="3" aria-label="표준 입력" placeholder="긁?로 읽을 값을 한 줄에 하나씩"></textarea>
+      <div class="pane-head">
+        <h2>출력</h2>
+        <span id="status" class="status" aria-live="polite"></span>
+      </div>
+      <div id="output" class="output" aria-live="polite">
+        <p class="empty">실행하면 출력이 여기에 나옵니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cheat" class="cheat" hidden aria-label="키워드 치트시트">
+    <div class="cheat-head">
+      <h2>키워드 치트시트</h2>
+      <button id="cheat-close" type="button" aria-label="치트시트 닫기">닫기</button>
+    </div>
+    <div id="cheat-body" class="cheat-body"></div>
+  </aside>
+
+  <footer class="foot">
+    <span>rycont의 엄랭에서 출발한 2026년판. 정수는 온점·반점, 나머지는 밈.</span>
+    <span>이 페이지는 서버 없이 브라우저 안에서만 실행됩니다.</span>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

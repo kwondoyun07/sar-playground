@@ -1,0 +1,20 @@
+{
+  "name": "gglang-playground",
+  "version": "0.1.0",
+  "private": true,
+  "description": "엄랭 v2 (가칭) 인터프리터(TypeScript)와 브라우저 플레이그라운드",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "cli": "node scripts/cli.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vite-plugin-singlefile": "^2.3.3",
+    "vitest": "^5.0.1"
+  }
+}

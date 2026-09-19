@@ -25,6 +25,9 @@ npm run cli -- -c "어머니 저 똥꼬에서 김치가 나옵니다; 싹싹김�
 
 ## 버셀 배포 (GitHub 연동)
 
+- 저장소: https://github.com/kwondoyun07/gglang-playground
+- 배포 주소: https://gglang-playground.vercel.app
+
 1. 이 폴더를 GitHub 저장소로 올립니다.
    ```bash
    git init && git add -A && git commit -m "엄랭 v2 플레이그라운드"

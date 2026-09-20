@@ -1,8 +1,8 @@
 {
-  "name": "gglang-playground",
+  "name": "sar-playground",
   "version": "0.1.0",
   "private": true,
-  "description": "엄랭 v2 (가칭) 인터프리터(TypeScript)와 브라우저 플레이그라운드",
+  "description": "SAR 인터프리터(TypeScript)와 브라우저 플레이그라운드",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,9 +1,9 @@
-# 엄랭 v2 (가칭) 플레이그라운드
+# SAR 플레이그라운드
 
-2026년 밈으로 만든 난해한 프로그래밍 언어 **엄랭 v2 (가칭)** 의 TypeScript 인터프리터와 브라우저 플레이그라운드입니다.
+2026년 밈으로 만든 난해한 프로그래밍 언어 **SAR** 의 TypeScript 인터프리터와 브라우저 플레이그라운드입니다.
 서버 없이 브라우저 안에서만 실행되며, 빌드 결과는 `dist/index.html` 파일 하나입니다.
 
-- 언어 명세: 「엄랭 v2 (가칭) 언어 명세」 문서
+- 언어 명세: 「SAR 언어 명세」 문서
 - 레퍼런스 구현: `gg.py` (파이썬). 이 저장소의 `src/interpreter.ts`는 같은 문법·동작을 따르고, 예제 8개와 오류 케이스를 테스트로 대조합니다.
 
 ## 로컬에서 돌리기
@@ -25,12 +25,12 @@ npm run cli -- -c "어머니 저 똥꼬에서 김치가 나옵니다; 싹싹김�
 
 ## 버셀 배포 (GitHub 연동)
 
-- 저장소: https://github.com/kwondoyun07/gglang-playground
-- 배포 주소: https://gglang-playground.vercel.app
+- 저장소: https://github.com/kwondoyun07/sar-playground
+- 배포 주소: https://sar-playground.vercel.app
 
 1. 이 폴더를 GitHub 저장소로 올립니다.
    ```bash
-   git init && git add -A && git commit -m "엄랭 v2 플레이그라운드"
+   git init && git add -A && git commit -m "SAR 플레이그라운드"
    git branch -M main
    git remote add origin https://github.com/<계정>/<저장소>.git
    git push -u origin main
